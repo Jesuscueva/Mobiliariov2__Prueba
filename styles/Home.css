@@ -3,6 +3,7 @@
     width: 100%;
     scroll-behavior: smooth;
     background-color: var(--color-fondo);
+    /* z-index: 500; */
 }
 .container_slider{
     height: 550px;
@@ -136,7 +137,7 @@
     width: 300px;
     height: 400px;
     background-color: #fff;
-    border-radius: 14px;
+    border-radius: 16px;
     overflow: hidden;
     position: relative;
 }
@@ -227,7 +228,7 @@
     position: relative;
     width: 0;
     background-color: #666666;
-    border-radius: 14px;
+    border-radius: 16px;
     overflow: hidden;
     height: 535px;
     display: flex;
@@ -323,6 +324,7 @@
     text-align: center;
     font-size: 36px;
     color: var(--color-secondary);
+    transform: scale(0);
 }
 .titulo_noticias > strong{
     color: var(--color-primary);
@@ -416,6 +418,7 @@
     text-align: center;
     font-size: 36px;
     color: var(--color-secondary);
+    transform: scale(0);
 }
 .title_empresa > strong {
     color: var(--color-primary);
@@ -511,6 +514,35 @@
         width: 500px;
     }
 }
+@media screen and ( max-width: 768px) {
+    .footer{
+        padding-left: 24px;
+        padding-right: 24px;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 16px;
+    }
+    .footer > *{
+        width: 100%;
+        text-align: center;
+    }
+    .footer_links{
+        gap: 4px;
+    }
+    .link{
+        font-size: 16px;
+    }
+    .footer_rigth{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .footer_rigth > *{
+        flex: 1;
+    }
+    .footer__redes{
+        align-items: center;
+    }
+}
 
 @media screen and (max-width: 620px) {
     .figure.one{
@@ -536,10 +568,70 @@
     }
 }
 @media screen and (max-width: 540px) {
+    *{
+        transition: 1s all;
+    }
     .nav__secondary.anima{
-        width: 50%;
+        /* width: 50%; */
+    }
+    .section__four{
+        padding: 0;
+        padding-bottom: 26px;
+    }
+    .titulo_noticias{
+        padding-top: 20px;
+    }
+    .contendor__btn_eventos{
+        margin-top: 25px;
+    }
+    .div-article{
+        padding: 0px 32px;
     }
     .container_img{
-        width: 95%;
+        width: 100%;
+    }
+    .capa_img{
+        height: 100%;
+    }
+    .capa_img > img {
+        object-fit: cover;
+        height: 100%;
+    }
+    .info_empresa{
+        gap: 16px;
+    }
+    .card_noticia{
+        flex-direction: column;
+        justify-content: center;
+        min-height: auto;
+        padding: 16px 0;  
+        gap: 12px;
+    }
+    .description_noticias{
+        text-align: center;
+    }
+    .container_img{
+        height: 300px;
+    }
+    .container_slider{
+        height: 400px;
+    }
+    .titulo__{
+        font-size: 26px !important;
+    }
+    .gallery{
+        height: 330px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .div-article{
+        padding: 0px;
+    }
+    .footer_rigth{
+        flex-direction: column;
+    }
+    .footer__logo:nth-child(1){
+        order: 2;
     }
 }

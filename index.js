@@ -16,7 +16,9 @@ const $sectionTwo = d.querySelector(".section__two"),
         $sectionOne = d.querySelector(".section__one")
 
 const $efecto = d.querySelectorAll(".efecto"),
-        $efectoThree = d.querySelectorAll(".efecto_three")
+        $efectoThree = d.querySelectorAll(".efecto_three"),
+        $efectoGallery = d.querySelector(".efecto_gallery"),
+        $efectoFour = d.querySelectorAll(".efecto__four")
 
 
 const scroll = () => {    
@@ -36,8 +38,16 @@ const scroll = () => {
             })
         }
         if(sectionThree - 300 < menuScroll){
+            $efectoGallery.classList.add("anima")
             $efectoThree.forEach(efect => {
-                efect.classList.add("anima")
+                efect.style.transition = "2s all"
+                efect.style.transform = "scale(1)"
+            })
+        }
+        if(sectionFour - 300 < menuScroll){
+            $efectoFour.forEach(four => {
+                four.style.transition = "2s all"
+                four.style.transform = "scale(1)"
             })
         }
         if(sectionOne < menuScroll){
@@ -60,6 +70,11 @@ scroll()
 const MenuNavegacion = (oneMenu, menuLista) => {
     d.getElementById(oneMenu).addEventListener("click", e => {
         d.querySelector(menuLista).classList.toggle("anima")
+        d.querySelector(".body").classList.toggle("overflow")
+        d.querySelector(".overly__opacity ").classList.toggle("overly")
+        $subListaServicio.forEach(subList => {
+            subList.classList.remove("anima")
+        })
     }) 
 }
 
@@ -128,6 +143,42 @@ const Carousel = (img) => {
     
 }
 
+const $subListaServicio = d.querySelectorAll(".lista_mobil")
+
+const eventoMouseMediaQuery = ()=> {
+    let minAncho = window.matchMedia("(max-width: 540px)")
+    const $lista = d.querySelectorAll(".lista"),
+            $selecHover = d.querySelectorAll(".selec_hover"),
+            $linkServicios = d.querySelector(".link_servicios"),
+            $linkProyectos = d.querySelector(".link__proyectos"),
+            $listaSubThree = d.querySelector(".lista__sub_three")
+            
+
+    const responsive = e =>{
+        if(e.matches){
+            console.log("celular")
+            $selecHover.forEach( list => {
+                list.classList.remove("hover")
+            })
+            $listaSubThree.classList.remove("hover")
+            $linkServicios.addEventListener("click", e => {
+                $subListaServicio[0].classList.toggle("anima")
+            })
+            $linkProyectos.addEventListener("click", e => {
+                $subListaServicio[1].classList.toggle("anima")
+            })
+        }else{
+            console.log("Desktop")
+            $selecHover.forEach( list => {
+                list.classList.add("hover")
+            })
+            $listaSubThree.classList.add("hover")
+        }
+    }
+    minAncho.addEventListener("change", responsive)
+    responsive(minAncho)
+}
+
 
 d.addEventListener("DOMContentLoaded", e => {
     const inicio = e => {
@@ -138,4 +189,5 @@ d.addEventListener("DOMContentLoaded", e => {
     }
     inicio()
     Carousel(imgCarousel)
+    eventoMouseMediaQuery()
 })
