@@ -78,6 +78,22 @@ const MenuNavegacion = (oneMenu, menuLista) => {
     }) 
 }
 
+const menuNavFloat = () => {
+    d.getElementById("contenedor__bars").addEventListener("click", e=>{
+        d.querySelector(".wrapper__navbar_second").classList.toggle("anima")
+        d.querySelector(".body").classList.toggle("overflow")
+    })
+    d.querySelector(".lista__nav_servicios").addEventListener("click", e => {
+        d.querySelector(".lista__nav_servicios").classList.toggle("anima")
+        d.querySelector(".link__nav_service").classList.toggle("selec")
+    })
+    d.querySelector(".lista__nav_proyectos").addEventListener("click", e => {
+        d.querySelector(".lista__nav_proyectos").classList.toggle("anima")
+        d.querySelector(".link__nav_proyect").classList.toggle("selec")
+    })
+}
+
+menuNavFloat()
 MenuNavegacion("open_menu", ".container_lista")
 
 
@@ -157,18 +173,25 @@ const eventoMouseMediaQuery = ()=> {
     const responsive = e =>{
         if(e.matches){
             console.log("celular")
+            // d.querySelector(".body").classList.remove("overflow")
             $selecHover.forEach( list => {
                 list.classList.remove("hover")
             })
             $listaSubThree.classList.remove("hover")
             $linkServicios.addEventListener("click", e => {
+                console.log("click")
+                console.log($subListaServicio[0])
                 $subListaServicio[0].classList.toggle("anima")
+                $linkServicios.classList.toggle("selec")
             })
             $linkProyectos.addEventListener("click", e => {
                 $subListaServicio[1].classList.toggle("anima")
+                $linkProyectos.classList.toggle("selec")
             })
         }else{
             console.log("Desktop")
+            // d.querySelector(".body").classList.remove("overflow")
+            $subListaServicio[0].classList.remove("anima")
             $selecHover.forEach( list => {
                 list.classList.add("hover")
             })

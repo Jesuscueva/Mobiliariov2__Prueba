@@ -23,34 +23,74 @@
             </figure>
         </div>
         <div class="menu">
-            <div class="contenedor__bars">
+            <div class="contenedor__bars" id="contenedor__bars">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </div>
-    <div class="wrapper__navbar_second">
+    <div class="wrapper__navbar_second ">
         <div class="overly__second"></div>
         
         <ul class="navbar__second_lista">
             
             <li class="lista__nav">
-                <a href="" class="link__nav">INICIO</a>
-            </li>
-            <li class="lista__nav">
-                <a href="" class="link__nav">NOSOTROS</a>
-            </li>
-            <li class="lista__nav">
-                <a href="" class="link__nav">SERVICIOS
-                    <i class="icono_top fas fa-angle-down"></i>
+                <a href="#/" class="link__nav ">INICIO
+                    <i class="fas fa-angle-double-right"></i>
                 </a>
             </li>
             <li class="lista__nav">
-                <a href="" class="link__nav">PROYECTOS
-                    <i class="icono_top fas fa-angle-down"></i>
+                <a href="#/nosotros" class="link__nav ">NOSOTROS
+                    <i class="fas fa-angle-double-right"></i>
                 </a>
             </li>
+            <li class="lista__nav lista__nav_servicios ">
+                <a  class="link__nav link__nav_service">SERVICIOS
+                    <i class="icono_top fas fa-angle-down"></i>
+                </a>
+                <div class="sub__lista_float" id="sub__list">
+                    <div class="lista_second_float" >
+                        <a class="link__sub_lista_float " href="#/servicio/instalación">INSTALACIÓN <i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                    <div class="lista_second_float">
+                        <a class="link__sub_lista_float " href="#/servicio/diseño">DISEÑO <i class=" fas fa-angle-double-right"></i></a>
+                    </div>
+                    <div class="lista_second_float">
+                        <a class="link__sub_lista_float " href="#/servicio/fabricacion">FABRICACIÓN <i class=" fas fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </li>
+            <li class="lista__nav lista__nav_proyectos">
+                <a  class="link__nav link__nav_proyect">PROYECTOS
+                    <i class="icono_top fas fa-angle-down"></i>
+                </a>
+                <div class="sub__lista_float" id="sub__list">
+                    <div class="lista_second_float" >
+                        <a class="link__sub_lista_float " href="#/servicio/instalación">PRIVADOS <i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                    <div class="lista_second_float">
+                        <a class="link__sub_lista_float " href="#/servicio/diseño">PARTICULARES <i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                    <div class="lista_second_float">
+                        <span class="link__sub_lista_float "">MOBILIARIO <i class=" fas fa-angle-double-right"></i></a>
+                        <div class="sub_three_float anima">
+                            <div class="sub__lista_float">
+                                <a href="#/mobiliario/educativo"  class="link__sub_lista_float ">EDUCATIVO
+                                    <i class="fas fa-angle-double-right"></i>
+                                </a>
+                            </div>
+                            <div class="sub__lista_float">
+                                <a href="#/mobiliario/educativo" class="link__sub_lista_float ">OFICINA
+                                    <i class=" fas fa-angle-double-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
             <li class="lista__nav">
-                <a href="" class="link__nav">CONTACTO</a>
+                <a href="#/contacto" class="link__nav ">CONTACTO
+                    <i class="fas fa-angle-double-right"></i>
+                </a>
             </li>
 
         </ul>
@@ -74,7 +114,7 @@
                     <a href="#/nosotros">NOSOTROS</a>
                 </li>
                 <li class="lista selec_hover lista_mobil ">
-                    <a class="link_servicios" href="#">SERVICIOS <i class="icono__sub_menu fas fa-angle-down"></i></a> 
+                    <a class="link_servicios">SERVICIOS <i class="icono__sub_menu fas fa-angle-down"></i></a> 
                     <div class="sub__lista sub__lista_mobil" id="sub__list">
                         <div class="lista_second lista_second_mobil" >
                             <a class="link__sub_lista" href="#/servicio/instalación">INSTALACIÓN <i class="icono fas fa-angle-double-right"></i></a>
@@ -103,7 +143,7 @@
                             </a>
                         </div>
                         <div class="lista_second lista__sub_three">
-                            <a href="#">
+                            <a >
                                 MOBILIARIO <i class="fas fa-angle-down icono__sub_menu_three"></i></a>
                                 
                             <div class="sub_three">

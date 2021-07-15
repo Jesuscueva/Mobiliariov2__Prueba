@@ -1,4 +1,9 @@
-
+.body.overflow{
+    overflow: hidden;
+}
+a{
+    cursor: pointer;
+}
 .section__one{
     width: 100%;
     scroll-behavior: smooth;
@@ -276,8 +281,8 @@
     color: #fff;
     outline: none;
     border: none;
-    top: 47.5%;
-    left: 41%;
+    top: 45%;
+    left: 40%;
     border-radius: 10px;
     font-size: 1.2rem;
     transition: .7s all;
@@ -569,7 +574,7 @@
 }
 @media screen and (max-width: 540px) {
     *{
-        transition: 1s all;
+        transition: .6s all;
     }
     .nav__secondary.anima{
         /* width: 50%; */
