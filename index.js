@@ -1,5 +1,6 @@
 "use strict"
 
+import ContenedorNosotros from "./js/ContenedorNsotros.js"
 import eventoMouseMediaQuery from "./js/EventMediaQuery.js"
 import menuNavFloat from "./js/MenuNaFloat.js"
 import MenuNavegacion from "./js/MenuNavegación.js"
@@ -17,14 +18,15 @@ d.addEventListener("DOMContentLoaded", () => {
     menuNavFloat()
     Route()
     
-    const imgCarousel = d.querySelectorAll(".img__carousel")
-        const inicio = e => {
-            imgCarousel.forEach( img => {
-                console.log(img)
-                img.classList.add("active")
-            })
-        }
-    inicio()
+    // const imgCarousel = d.querySelectorAll(".img__carousel")
+    //     const inicio = e => {
+    //         imgCarousel.forEach( img => {
+    //             console.log(img)
+    //             img.classList.add("active")
+    //         })
+    //     }
+    // inicio()
+    ContenedorNosotros()
     w.addEventListener("hashchange", e => {
         Route()
     })

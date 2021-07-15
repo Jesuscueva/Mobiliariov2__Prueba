@@ -5,7 +5,7 @@ const Home = () => {
     const contenedorHome = document.createElement("div")
     contenedorHome.innerHTML = `
 
-        <section class="section__one">
+        <section class="section__one section__primary">
         <div class="container_slider">
             <div class="slide_section">
                 <div class="slider opacity">

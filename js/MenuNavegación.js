@@ -10,6 +10,7 @@ const MenuNavegacion = (oneMenu, menuLista) => {
         $subListaServicio.forEach(subList => {
             subList.classList.remove("anima")
         })
+        
     }) 
 }
 

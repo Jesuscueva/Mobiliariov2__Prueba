@@ -4,7 +4,7 @@ const d = document
 const ScrollNav = () => {
     d.addEventListener("scroll", e => {
                 
-        const $sectionOne = d.querySelector(".section__one"),
+        const $sectionOne = d.querySelector(".section__primary"),
         sectionOne = $sectionOne.offsetTop
         const menuScroll = d.documentElement.scrollTop
         const $navTwo  = d.querySelector(".nav__secondary"),
