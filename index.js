@@ -26,7 +26,6 @@ d.addEventListener("DOMContentLoaded", () => {
     //         })
     //     }
     // inicio()
-    ContenedorNosotros()
     w.addEventListener("hashchange", e => {
         Route()
     })

@@ -411,7 +411,7 @@ menu{
 .footer{
     background-color: var(--color-secondary);
     display: flex;
-    padding: 32px 64px 0px 64px;
+    padding: 16px 64px 0px 64px;
 }
 
 .footer_left{
@@ -420,17 +420,20 @@ menu{
     padding: 16px;
 }
 .footer__titulo{
-    font-size: 40px;
+    font-size: 35px;
     color: var(--color-primary);
     margin-bottom: 16px;
 }
 .footer_links{
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 5px;
+}
+.link > *{
+    color: #fff;
 }
 .link{
-    font-size: 19px;
+    font-size: 16px;
     color: #fff;
     line-height: 23px;
     font-weight: lighter;
@@ -447,8 +450,8 @@ menu{
     padding-top: 16px;
 }
 .footer__logo{
-    width: 290;
-    height: 150px;
+    width: 250;
+    height: 110px;
 }
 .contenedor__img{
     width: 100%;
@@ -482,10 +485,11 @@ menu{
 .derechs{
     width: 100%;
     background-color: var(--color-secondary);
-    padding: 16px;
+    padding: 10px;
 }
 .derechs > p{
     color: #fff;
+    font-size: 13px;
     text-align: center;
 }
 

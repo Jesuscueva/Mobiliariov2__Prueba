@@ -1,5 +1,7 @@
 import Home from "../components/Home/Home.js"
+import Nosotros from "../components/Nosotros/Nosotros.js"
 import Carousel from "../js/Carousel.js"
+import ContenedorNosotros from "../js/ContenedorNsotros.js"
 import scrollEfecHome from "../js/ScrollEfecHome.js"
 
 const d = document
@@ -9,17 +11,22 @@ const root = d.getElementById("root")
 
 const Route = () => {
     let hash = window.location.hash
-    // root.innerHTML = " "
+    root.innerHTML = " "
     if( hash === "#/home"){
         console.log("Home")
 
-        // root.appendChild(Home())
-        // const imgCarousel = d.querySelectorAll(".img__carousel")
-        // Carousel(imgCarousel)
-        // scrollEfecHome()
+        root.appendChild(Home())
+        const imgCarousel = d.querySelectorAll(".img__carousel")
+        Carousel(imgCarousel)
+        scrollEfecHome()
     }else if( hash === "#/nosotros"){
         // root.innerHTML = "Nosotros"
-
+        root.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+        root.appendChild(Nosotros())
+        ContenedorNosotros()
     }else if( hash === "#/contacto"){
         root.innerHTML = "contacto"
 

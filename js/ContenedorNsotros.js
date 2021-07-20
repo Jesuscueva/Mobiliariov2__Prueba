@@ -3,19 +3,36 @@
 const d = document,
         w = window
 const ContenedorNosotros = () => {
-    const $img = d.querySelector(".container__img"),
-            $parrafo = d.querySelector(".descripcion_nosotros")
-    
+    const $wrapperImg = d.querySelectorAll(".wrapper_img_descrip_"),
+            $parrafo = d.querySelector(".descripcion_nosotros"),
+            $subTitulo = d.querySelectorAll(".sub_titulo")
+        
+
     w.addEventListener("click", e => {
         if(e.target.matches(".mision")  || e.target.matches(".mision *")){
-            $img.innerHTML = `<img src="../assets/mision.png" > `
-            $parrafo.innerHTML = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumerat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto "
+            console.log("mision")
+            $subTitulo[0].classList.add("selec")
+            $subTitulo[1].classList.remove("selec")
+            $subTitulo[2].classList.remove("selec")
+            $wrapperImg[0].classList.add("selec")
+            $wrapperImg[1].classList.remove("selec")
+            $wrapperImg[2].classList.remove("selec")
         }else if(e.target.matches(".vision") || e.target.matches(".vision *")){
             console.log("vision")
-            $parrafo.innerHTML = "vision"
+            $subTitulo[1].classList.add("selec")
+            $subTitulo[0].classList.remove("selec")
+            $subTitulo[2].classList.remove("selec")
+            $wrapperImg[0].classList.remove("selec")
+            $wrapperImg[2].classList.remove("selec")
+            $wrapperImg[1].classList.add("selec")
         }else if(e.target.matches(".valores") || e.target.matches(".valores *")){
             console.log("valores")
-            $parrafo.innerHTML = "Valores"
+            $subTitulo[2].classList.add("selec")
+            $subTitulo[0].classList.remove("selec")
+            $subTitulo[1].classList.remove("selec")
+            $wrapperImg[0].classList.remove("selec")
+            $wrapperImg[1].classList.remove("selec")
+            $wrapperImg[2].classList.add("selec")
         }
     })
 }
