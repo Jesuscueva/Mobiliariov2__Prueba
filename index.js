@@ -18,16 +18,20 @@ d.addEventListener("DOMContentLoaded", () => {
     menuNavFloat()
     Route()
     
-    // const imgCarousel = d.querySelectorAll(".img__carousel")
-    //     const inicio = e => {
-    //         imgCarousel.forEach( img => {
-    //             console.log(img)
-    //             img.classList.add("active")
-    //         })
-    //     }
-    // inicio()
+    
     w.addEventListener("hashchange", e => {
         Route()
     })
+
+    const imgCarousel = d.querySelectorAll(".img__carousel")
+    const inicio = e => {
+            imgCarousel.forEach( img => {
+                console.log(img)
+                img.classList.add("active")
+            })
+        }
+    setTimeout(()=>{
+        inicio()
+    }, 200)
 })
 

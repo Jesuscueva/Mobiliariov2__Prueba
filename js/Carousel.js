@@ -16,11 +16,12 @@ const Carousel = (img) => {
         }
         $slider[i].classList.add("opacity")
         if(i === 0){
+            console.log("3 slides")
             setTimeout(() => {
                 img.forEach( j => {
                     j.classList.add("active")
                 })
-            },300)
+            },200)
         }
         if(i != 0){
             img.forEach(j => {

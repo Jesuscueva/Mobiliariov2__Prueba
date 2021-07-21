@@ -22,13 +22,13 @@ const scrollEfecHome = () => {
                 sectionOne = $sectionOne.offsetTop
         // console.log(sectionOne - 100)
 
-        if(sectionTwo - 180  < menuScroll){
-            // console.log("llegue")
+        if(sectionTwo - 350  < menuScroll){
+            console.log("llegue")
             $efecto.forEach(efec => {
                 efec.classList.add("anima")
             })
         }
-        if(sectionThree - 300 < menuScroll){
+        if(sectionThree - 350 < menuScroll){
             $efectoGallery.classList.add("anima")
             $efectoThree.forEach(efect => {
                 efect.style.transition = "2s all"

@@ -16,7 +16,19 @@ const Route = () => {
         console.log("Home")
 
         root.appendChild(Home())
+
         const imgCarousel = d.querySelectorAll(".img__carousel")
+        const inicio = e => {
+            imgCarousel.forEach( img => {
+                console.log(img)
+                img.classList.add("active")
+            })
+        }
+        setTimeout(()=>{
+            inicio()
+        }, 200)
+
+        
         Carousel(imgCarousel)
         scrollEfecHome()
     }else if( hash === "#/nosotros"){

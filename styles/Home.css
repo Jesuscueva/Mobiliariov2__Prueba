@@ -476,7 +476,7 @@ a{
 
 .section__five{
     width: 100%;
-    padding: 45px;
+    padding: 35px;
     margin-bottom: 32px;
 }
 .section__five_titulo{
@@ -496,7 +496,7 @@ a{
     justify-content: center;
 }
 .figure__clientes{
-    width: 220px;
+    width: 200px;
     height: 130px;
     background-color: #666666;
     text-align: center;
@@ -546,6 +546,12 @@ a{
     }
     .footer__redes{
         align-items: center;
+    }
+    .section__five{
+        padding: 35px 0px;
+    }
+    .contenedor__clientes{
+        flex-wrap: wrap;
     }
 }
 
