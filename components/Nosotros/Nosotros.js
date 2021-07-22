@@ -68,7 +68,7 @@ const Nosotros = () => {
             </div>
             <div class="wrapper_img_descrip_">
                 <div class="container__img">
-                    <img src="./assets/" alt="Valores">
+                    <img src="./assets/valores-03.png" alt="Valores">
                 </div>
                 <div class="container__descrip">
                     <p class="descripcion_nosotros ">

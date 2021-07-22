@@ -1,3 +1,4 @@
+import Contacto from "../components/Contacto/Contacto.js"
 import Home from "../components/Home/Home.js"
 import Nosotros from "../components/Nosotros/Nosotros.js"
 import Carousel from "../js/Carousel.js"
@@ -14,6 +15,7 @@ const Route = () => {
     root.innerHTML = " "
     if( hash === "#/home"){
         console.log("Home")
+        d.title = "Mobiliario Perú "
 
         root.appendChild(Home())
 
@@ -38,30 +40,40 @@ const Route = () => {
             behavior: "smooth"
         })
         root.appendChild(Nosotros())
+        d.title = "Nosotros | Mobiliario - Perú"
         ContenedorNosotros()
     }else if( hash === "#/contacto"){
-        root.innerHTML = "contacto"
+        
+        d.title = "Contactanos | Mobiliario - Perú"
+        root.appendChild(Contacto())
 
     }else if( hash === "#/servicio/instalacion"){
         root.innerHTML = "servicio/instalacion"
+        d.title = "Instalaciones | Mobiliario - Perú"
 
     }else if( hash === "#/servicio/diseno"){
         root.innerHTML = "servicio/diseño"
+        d.title = "Diseños | Mobiliario - Perú"
 
     }else if( hash === "#/servicio/fabricacion"){
         root.innerHTML = "servicio/fabricacion"
+        d.title = "Fabricación | Mobiliario - Perú"
 
     }else if( hash === "#/proyectos/privados"){
         root.innerHTML = "proyectos/privados"
+        d.title = "Proyectos Privados | Mobiliario - Perú"
 
-    }else if( hash === "#/proyectos/particulares"){
-        root.innerHTML = "proyectos/particulares"
+    }else if( hash === "#/proyectos/publicos"){
+        root.innerHTML = "proyectos/publicos"
+        d.title = "Proyectos Públicos | Mobiliario - Perú"
 
     }else if( hash === "#/mobiliario/educativo"){
         root.innerHTML = "mobiliario/educativo"
+        d.title = "Educativo | Mobiliario - Perú"
 
     }else if( hash === "#/mobiliario/oficina"){
         root.innerHTML = "mobiliario/oficina"
+        d.title = "Oficina | Mobiliario - Perú"
 
     }else{
         root.innerHTML = "NO HAY NADA"

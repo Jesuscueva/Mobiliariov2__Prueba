@@ -96,7 +96,7 @@ strong{
 .border{
     width: 100%;
     background-color: #fff;
-    height: 2px !important;
+    min-height: 2px !important;
 }
 .sub_titulo.selec{
     transition: .5s all ;
@@ -210,5 +210,7 @@ strong{
     }
     .container_nosotros_info{
         width: 100%;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
     }
 }

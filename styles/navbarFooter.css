@@ -39,7 +39,7 @@ menu{
 }
 .nav__secondary.anima{
     transition: 1.2s all ease-in-out;
-    width: 99%;
+    width: 98%;
 }
 .contendor__logo{
     flex: 1;
@@ -85,16 +85,18 @@ menu{
     position: fixed;
     top: 58px;
     z-index: 4000;
+    opacity: 0;
 
     /* background-color: turquoise; */
     width: 100%;
     height: calc(100vh - 58px);
-    transform: translateY(1050px);
+    transform: translateY(4050px);
     transition: .5s all;
 }
 .wrapper__navbar_second.anima{
     transform: translateY(0);
     transition: .5s all;
+    opacity: 1;
 }
 .overly__second{
     width: 100%;

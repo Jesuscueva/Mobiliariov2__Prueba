@@ -580,7 +580,7 @@ a{
 }
 @media screen and (max-width: 540px) {
     *{
-        transition: .6s all;
+        transition: .3s all;
     }
     .nav__secondary.anima{
         /* width: 50%; */
