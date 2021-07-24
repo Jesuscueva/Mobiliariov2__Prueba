@@ -1,9 +1,13 @@
 import Contacto from "../components/Contacto/Contacto.js"
 import Home from "../components/Home/Home.js"
 import Nosotros from "../components/Nosotros/Nosotros.js"
+import Diseño from "../components/Servicios/Diseño.js"
+import Fabricacion from "../components/Servicios/Fabricacion.js"
+import Instalaciones from "../components/Servicios/Instalacione.js"
 import Carousel from "../js/Carousel.js"
 import ContenedorNosotros from "../js/ContenedorNsotros.js"
 import scrollEfecHome from "../js/ScrollEfecHome.js"
+import SliderServices from "../js/SliderServicios.js"
 
 const d = document
 
@@ -16,6 +20,10 @@ const Route = () => {
     if( hash === "#/home"){
         console.log("Home")
         d.title = "Mobiliario Perú "
+        root.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
 
         root.appendChild(Home())
 
@@ -45,19 +53,26 @@ const Route = () => {
     }else if( hash === "#/contacto"){
         
         d.title = "Contactanos | Mobiliario - Perú"
+        root.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
         root.appendChild(Contacto())
 
     }else if( hash === "#/servicio/instalacion"){
-        root.innerHTML = "servicio/instalacion"
+        root.appendChild(Instalaciones())
         d.title = "Instalaciones | Mobiliario - Perú"
-
+        SliderServices()
     }else if( hash === "#/servicio/diseno"){
-        root.innerHTML = "servicio/diseño"
+        
         d.title = "Diseños | Mobiliario - Perú"
+        root.appendChild(Diseño())
+        SliderServices()
 
     }else if( hash === "#/servicio/fabricacion"){
-        root.innerHTML = "servicio/fabricacion"
         d.title = "Fabricación | Mobiliario - Perú"
+        root.appendChild(Fabricacion())
+        SliderServices()
 
     }else if( hash === "#/proyectos/privados"){
         root.innerHTML = "proyectos/privados"

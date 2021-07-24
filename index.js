@@ -33,5 +33,7 @@ d.addEventListener("DOMContentLoaded", () => {
     setTimeout(()=>{
         inicio()
     }, 200)
+
+    
 })
 
