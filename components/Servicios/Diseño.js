@@ -14,7 +14,7 @@ const Diseño = () => {
     <div class="wrapper__img_descrip">
         <div class="slider__img">
             <div class="wrapper_slider selec">
-                    <img src="./assets/calidad.jpg" alt="">
+                    <img src="./assets/diseno.jpg" alt="">
             </div>
             <div class="wrapper_slider">
                 <img src="./assets/equipo.jpg" alt="">

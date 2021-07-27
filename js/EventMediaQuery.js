@@ -38,7 +38,7 @@ const eventoMouseMediaQuery = ()=> {
             $selecHover.forEach( list => {
                 list.classList.add("hover")
             })
-            $listaSubThree.classList.add("hover")
+            // $listaSubThree.classList.add("hover")
         }
     }
     minAncho.addEventListener("change", responsive)

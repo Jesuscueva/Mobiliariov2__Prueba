@@ -1,6 +1,7 @@
 import Contacto from "../components/Contacto/Contacto.js"
 import Home from "../components/Home/Home.js"
 import Nosotros from "../components/Nosotros/Nosotros.js"
+import Proyectos from "../components/Proyectos/Proyectos.js"
 import Diseño from "../components/Servicios/Diseño.js"
 import Fabricacion from "../components/Servicios/Fabricacion.js"
 import Instalaciones from "../components/Servicios/Instalacione.js"
@@ -74,10 +75,9 @@ const Route = () => {
         root.appendChild(Fabricacion())
         SliderServices()
 
-    }else if( hash === "#/proyectos/privados"){
-        root.innerHTML = "proyectos/privados"
+    }else if( hash === "#/proyectos"){
         d.title = "Proyectos Privados | Mobiliario - Perú"
-
+        root.appendChild(Proyectos())
     }else if( hash === "#/proyectos/publicos"){
         root.innerHTML = "proyectos/publicos"
         d.title = "Proyectos Públicos | Mobiliario - Perú"

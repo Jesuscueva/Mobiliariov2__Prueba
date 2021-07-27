@@ -96,4 +96,27 @@
     font-weight: bold;
 }
 
-
+@media screen and (max-width: 768px) {
+    .wrapper__img_descrip{
+        height: auto;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .slider__img{
+        min-height: 350px;
+    }
+    .wrapper__descrip{
+      padding: 16px 0;  
+    }
+}
+@media screen and (max-width: 550px) {
+    .wrapper__img_descrip{
+        width: 100%;
+    }
+    .slider__img{
+        min-height: 250px;
+    }
+    .wrapper__descrip{
+        padding: 16px;
+    }
+}

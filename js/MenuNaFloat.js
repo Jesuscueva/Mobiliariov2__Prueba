@@ -17,11 +17,15 @@ const menuNavFloat = () => {
 
     window.addEventListener("click", e => {
         // console.log(e.target)
-        if(e.target.matches(".link_nav_mobil") || e.target.matches(".sub_link_nav_mobil")){
+        if(e.target.matches(".link_nav_mobil") || e.target.matches(".sub_link_nav_mobil") || e.target.matches(".btn-proyectos")){
             console.log("click link")
             d.querySelector(".wrapper__navbar_second").classList.remove("anima")
             d.querySelector(".nav__secondary").classList.remove("anima")
             d.querySelector(".body").classList.remove("overflow")
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            })
         }
     })
 }

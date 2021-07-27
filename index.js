@@ -17,10 +17,12 @@ d.addEventListener("DOMContentLoaded", () => {
     MenuNavegacion("open_menu", ".container_lista")
     menuNavFloat()
     Route()
-    
-    
+
     w.addEventListener("hashchange", e => {
         Route()
+        const $principal = d.querySelector(".principal")
+        $principal.style.transition = ".6s all"
+        $principal.style.opacity = "1"
     })
 
     const imgCarousel = d.querySelectorAll(".img__carousel")

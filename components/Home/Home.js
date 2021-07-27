@@ -114,24 +114,24 @@ const Home = () => {
             <div class="gallery efecto_gallery">
                 <div class="gallery__left direction">
                     <div class="figure one">
-                        <img src="" alt="IMAGEN GALERIA">
+                        <img src="../../assets/proyecto1.jpg" alt="IMAGEN GALERIA">
+                        <a href="#/mobiliario/oficina" class="btn-proyectos">Ver más <i class="fas fa-chevron-right"></i> </a>
                     </div>
                     <div class="figure ">
                         <img src="" alt="IMAGEN GALERIA">
+                        <a href="#/mobiliario/educativo" class="btn-proyectos">Ver más <i class="fas fa-chevron-right"></i> </a>
                     </div>
                 </div>
                 <div class="gallery__rigth direction">
                     <div class="figure">
                         <img src="" alt="IMAGEN GALERIA">
+                        <a href="#/proyectos/publicos" class="btn-proyectos">Ver más <i class="fas fa-chevron-right"></i> </a>
                     </div>
                     <div class="figure two">
                         <img src="" alt="IMAGEN GALERIA">
+                        <a href="#/proyectos/privados" class="btn-proyectos">Ver más <i class="fas fa-chevron-right"></i> </a>
                     </div>
                 </div>
-                <button class="btn__proyectos">
-                    Ver Más 
-                    <i class="fas fa-arrow-right"></i>
-                </button>
             </div>
         </div>
     </section>
