@@ -5,9 +5,9 @@ const Nosotros = () => {
 
     const contenedorNosotros = document.createElement("div")
     contenedorNosotros.innerHTML = `
-    <div class="bloque parallax img section__primary">
+    <div class="bloque parallax nosotros img section__primary">
     <div class="background_transparent"></div>
-    <div class="wrapper_titulo">
+    <div class="wrapper_titulo_nosotros">
         <h2>QUIENES <strong>SOMOS?</strong></h2>
     </div>
 </div>

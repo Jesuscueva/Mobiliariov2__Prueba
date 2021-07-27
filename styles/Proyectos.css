@@ -4,12 +4,13 @@
     --color-secondary: rgb(55, 55, 57);
     --color-fondo: #E4E4E4
 }
-.bloque.parallax{
+.bloque.parallax.proyectos{
     height: 470px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    background-position: center;
 }
 .parallax.img{
     background-image: url(../assets/proyectos.jpg);
@@ -126,6 +127,9 @@ strong{
 
 @media screen and (max-width: 730px) {
     .wrapper__proyectos{
+        padding: 40px 16px;
+    }
+    .wrapper__proyectos{
         flex-wrap: nowrap;
         display: block;
     }
@@ -137,5 +141,12 @@ strong{
     .card_proyecto:hover > .card__description{
         right: 24px;
         top: 24px;
+    }
+    .bloque.parallax.proyectos{
+        background-attachment: initial;
+        height: 350px;
+    }
+    .wrapper_titulo_proyect > h2{
+        font-size: 35px;
     }
 }

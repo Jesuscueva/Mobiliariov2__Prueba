@@ -4,11 +4,9 @@ const Contacto = () => {
 
     const contenedorContacto = document.createElement("div")
     contenedorContacto.innerHTML = `
-    <div class="bloque parallax img_contact section__contact section__primary">
+    <div class="bloque parallax contacto img_contact section__contact section__primary">
     <div class="background_transparent"></div>
-    <!-- <div class="wrapper_titulo">
-        <h2>QUIENES <strong>SOMOS?</strong></h2>
-    </div> -->
+    
     </div>
 
     <div class="wrapper_mensaje">

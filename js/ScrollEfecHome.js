@@ -22,20 +22,20 @@ const scrollEfecHome = () => {
                 sectionOne = $sectionOne.offsetTop
         // console.log(sectionOne - 100)
 
-        if(sectionTwo - 350  < menuScroll){
+        if(sectionTwo - 450  < menuScroll){
             console.log("llegue")
             $efecto.forEach(efec => {
                 efec.classList.add("anima")
             })
         }
-        if(sectionThree - 350 < menuScroll){
+        if(sectionThree - 450 < menuScroll){
             $efectoGallery.classList.add("anima")
             $efectoThree.forEach(efect => {
                 efect.style.transition = "2s all"
                 efect.style.transform = "scale(1)"
             })
         }
-        if(sectionFour - 300 < menuScroll){
+        if(sectionFour - 450 < menuScroll){
             $efectoFour.forEach(four => {
                 four.style.transition = "2s all"
                 four.style.transform = "scale(1)"

@@ -3,7 +3,7 @@
 const Proyectos = () => {
     const contenedorProyectos = document.createElement("div")
     contenedorProyectos.innerHTML = `
-    <div class="bloque parallax img section__primary">
+    <div class="bloque parallax proyectos img section__primary">
     <div class="background_transparent"></div>
     <div class="wrapper_titulo_proyect">
         <h2>NUESTROS <strong>PROYECTOS</strong></h2>
