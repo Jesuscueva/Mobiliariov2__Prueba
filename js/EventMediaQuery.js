@@ -9,8 +9,8 @@ const eventoMouseMediaQuery = ()=> {
     const $lista = d.querySelectorAll(".lista"),
             $selecHover = d.querySelectorAll(".selec_hover"),
             $linkServicios = d.querySelector(".link_servicios"),
-            $linkProyectos = d.querySelector(".link__proyectos"),
-            $listaSubThree = d.querySelector(".lista__sub_three")
+            $linkProyectos = d.querySelector(".link__proyectos")
+            // $listaSubThree = d.querySelector(".lista__sub_three")
             
 
     const responsive = e =>{
