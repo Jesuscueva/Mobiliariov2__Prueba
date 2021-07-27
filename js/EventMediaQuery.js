@@ -20,7 +20,7 @@ const eventoMouseMediaQuery = ()=> {
             $selecHover.forEach( list => {
                 list.classList.remove("hover")
             })
-            $listaSubThree.classList.remove("hover")
+            // $listaSubThree.classList.remove("hover")
             $linkServicios.addEventListener("click", e => {
                 console.log("click")
                 console.log($subListaServicio[0])
