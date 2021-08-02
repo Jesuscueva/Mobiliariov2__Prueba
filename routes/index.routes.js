@@ -7,6 +7,7 @@ import Fabricacion from "../components/Servicios/Fabricacion.js"
 import Instalaciones from "../components/Servicios/Instalacione.js"
 import Carousel from "../js/Carousel.js"
 import ContenedorNosotros from "../js/ContenedorNsotros.js"
+import Formulario from "../js/Formulario.js"
 import scrollEfecHome from "../js/ScrollEfecHome.js"
 import SliderServices from "../js/SliderServicios.js"
 
@@ -59,7 +60,7 @@ const Route = () => {
             behavior: "smooth"
         })
         root.appendChild(Contacto())
-
+        Formulario()
     }else if( hash === "#/servicio/instalacion"){
         root.appendChild(Instalaciones())
         d.title = "Instalaciones | Mobiliario - Perú"

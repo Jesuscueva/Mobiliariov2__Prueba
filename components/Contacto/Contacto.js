@@ -22,20 +22,20 @@ const Contacto = () => {
             <div class="title">
                 Formulario Contacto
             </div>
-            <form class="wrapper__form_contac">
+            <form class="wrapper__form_contac" id="form-contacto">
 
                 <div class=" wrapper__input">
                     <div class="wrapper_icon_input">
                         <div class="icon">
                             <i class="fas fa-user"></i>
                         </div>
-                        <input class="input__contac" type="text" placeholder="Nombres y Apellidos">
+                        <input id="nombres" class="input__contac" type="text" placeholder="Nombres y Apellidos">
                     </div>
                     <div class="wrapper_icon_input">
                         <div class="icon">
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <input class="input__contac" type="email" placeholder="Correo Electronico" required>
+                        <input id="correo" class="input__contac" type="email" placeholder="Correo Electronico" required>
                     </div>
                 </div>
                 
@@ -44,13 +44,13 @@ const Contacto = () => {
                         <div class="icon">
                             <i class="fas fa-phone-alt"></i>
                         </div>
-                        <input class="input__contac" type="number" placeholder="Número de Celular">
+                        <input id="celular" class="input__contac" type="number" placeholder="Número de Celular">
                     </div>
                     <div class="wrapper_icon_input">
                         <div class="icon">
                             <i class="fas fa-building"></i>
                         </div>
-                        <input class="input__contac" type="text" placeholder="Empresa">
+                        <input id="empresa" class="input__contac" type="text" placeholder="Empresa">
                     </div>
                 </div>
     
@@ -59,7 +59,7 @@ const Contacto = () => {
                         <div class="icon">
                             <i class="fas fa-book"></i>
                         </div>
-                        <input class="input__contac" type="text" placeholder="Asunto">
+                        <input id="asunto" class="input__contac" type="text" placeholder="Asunto">
                     </div>
                     <div class="wrapper_icon_input disabled">
                         
@@ -71,12 +71,20 @@ const Contacto = () => {
                         <div class="icon textarea">
                             <i class="fas fa-pencil-alt"></i>
                         </div>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Dejanos tu comentario*" required></textarea>
+                        <textarea name="" id="textarea" cols="30" rows="10" placeholder="Dejanos tu comentario*" required></textarea>
                     </div>
                 </div>
                 <button class="btn__form_contatc" type="submit"><i class="icono_enviar fas fa-paper-plane"></i> &nbsp; Enviar</button>
                 
             </form>
+
+            <div class="wrapper__message" id="wrapper__message">
+                <div class="container__card">
+                    <i class="far fa-check-circle"></i>
+                    <h2>Formulario Enviado <br> Correctamente !!</h2>
+                    <p>En breve nos pondremos en contacto</p>
+                </div>
+            </div>
         </div>
 
         <div class="contenedor__map_">
