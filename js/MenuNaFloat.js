@@ -10,10 +10,10 @@ const menuNavFloat = () => {
         d.querySelector(".lista__nav_servicios").classList.toggle("anima")
         d.querySelector(".link__nav_service").classList.toggle("selec")
     })
-    d.querySelector(".lista__nav_proyectos").addEventListener("click", e => {
-        d.querySelector(".lista__nav_proyectos").classList.toggle("anima")
-        d.querySelector(".link__nav_proyect").classList.toggle("selec")
-    })
+    // d.querySelector(".lista__nav_proyectos").addEventListener("click", e => {
+    //     d.querySelector(".lista__nav_proyectos").classList.toggle("anima")
+    //     // d.querySelector(".link__nav_proyect").classList.toggle("selec")
+    // })
 
     window.addEventListener("click", e => {
         // console.log(e.target)

@@ -46,8 +46,8 @@ menu{
     padding: 4px 32px;
 }
 .figure_logo_second{
-    width: 90px;
-    height: 50px;
+    width: 75px;
+    height: 35px;
 }
 .figure_logo_second > img {
     width: 100%;
@@ -64,15 +64,15 @@ menu{
 }
 .contenedor__bars{
     /* background-color: brown; */
-    width: 30px;
+    width: 28px;
     border-radius: 5px;
     border: 2px solid #fff;
-    height: 30px;
+    height: 28px;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .contenedor__bars:hover > i{

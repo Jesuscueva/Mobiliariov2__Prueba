@@ -22,14 +22,27 @@
 }
 .title_servicios{
     width: 85%;
-    font-size: 32px;
+    font-size: 42px;
     color: var(--color-secondary);
+    border: none;
+    position: relative;
+    margin-bottom: 16px;
 }
-.line{
+.title_servicios::after{
+    content: "__________";
+    width: 160px;
+    position: absolute;
+    /* background-color: var(--color-secondary); */
+    bottom: 0;
+    height: 40px;
+    left: 0;
+    color:var(--color-secondary);
+}
+/* .line{
     width: 85%;
     background-color: rgb(138, 138, 139);
     height: 1px;
-}
+} */
 .wrapper__img_descrip{
     display: flex;
     width: 85%;
@@ -85,11 +98,13 @@
     padding: 16px;
 }
 .wrapper__descrip > p{
-    color: rgb(138, 138, 139);
+    /* color: rgb(138, 138, 139); */
     margin-bottom: 16px;
+    color: var(--color-secondary);
 }
 .lista_services{
-    color: rgb(138, 138, 139);
+    /* color: rgb(138, 138, 139); */
+    color: var(--color-secondary);
     margin-bottom: 5px;
 }
 .lista_services > strong {

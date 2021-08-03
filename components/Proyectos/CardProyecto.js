@@ -37,104 +37,76 @@ const CardProyecto = () => {
             fecha: "20 de enero 2020"
         }
     ]
-    const wrapperProyect = document.querySelector(".wrapper__proyectos")
-                wrapperProyect.innerHTML = " "
-                ProyectosTotal.forEach(el => {
-                    let div = document.createElement("div")
+
+    const creacionCard = (e) => {
+        let div = document.createElement("div")
                     wrapperProyect.appendChild(div)
                     div.innerHTML = `
                     <div class="card_proyecto">
                         <div class="card__border"></div>
-                        ${el.img}
-                        <div class="overflow"></div>
+                        ${e.img}
+                        <div class="overflow_card"></div>
                         <div class="card__description">
                             <div class="card__categoria">
-                                ${el.categoria}
+                                ${e.categoria}
                             </div>
                             <div class="card__title">
-                                ${el.title}
+                                ${e.title}
                             </div>
                             <div class="card__cliente">
-                                ${el.cliente}
+                                ${e.cliente}
                             </div>
                             <div class="card__fecha">
-                                ${el.fecha}
+                                ${e.fecha}
                             </div>
                         </div>
                     </div>
                     `
-                    
-                })
+    }
+
+    const wrapperProyect = document.querySelector(".wrapper__proyectos")
+    const $opcion = document.querySelectorAll(".text_filtrado")
+
+            wrapperProyect.innerHTML = " "
+                ProyectosTotal.forEach(el => {
+                    creacionCard(el)
+            })
+            $opcion[0].className = "text_filtrado active"
+
     window.addEventListener("click", e => {
             if(e.target.matches(".text_filtrado")){
                 wrapperProyect.innerHTML = " "
-                
-                if((e.target.textContent).replace(/\s+/g, '') === "Todo"){
-                    ProyectosTotal.forEach(el => {
-                        let div = document.createElement("div")
-                        wrapperProyect.appendChild(div)
-                        div.innerHTML = `
-                        <div class="card_proyecto">
-                            <div class="card__border"></div>
-                            ${el.img}
-                            <div class="overflow"></div>
-                            <div class="card__description">
-                                <div class="card__categoria">
-                                    ${el.categoria}
-                                </div>
-                                <div class="card__title">
-                                    ${el.title}
-                                </div>
-                                <div class="card__cliente">
-                                    ${el.cliente}
-                                </div>
-                                <div class="card__fecha">
-                                    ${el.fecha}
-                                </div>
-                            </div>
-                        </div>
-                        `
-                        
+                let contenido = e.target.textContent
+                const funcionSelec = () => {
+                    $opcion.forEach( (op) => {
+                        if(op.textContent === contenido ){
+                            op.className = "text_filtrado active"
+                        }else{
+                            op.className = "text_filtrado"
+                        }
                     })
+                }
+                
+                if(contenido.replace(/\s+/g, '') === "Todo"){
+                    ProyectosTotal.forEach(el => {
+                        creacionCard(el)
+                    })
+                    funcionSelec()
                 }else{
                     // console.log(e.target.textContent)
-                e.target.className = " text_filtrado active"
+                    funcionSelec()
+                e.target.className = "text_filtrado active"
                 console.log(e.target.className)
-                let seleccionado = e.target.textContent
-                seleccionado.replace(/\s+/g, '')
+        
+                contenido.replace(/\s+/g, '')
                 // console.log(seleccionado.replace(/\s+/g, ''))
                 let filtrado = ProyectosTotal.filter(proyec => {
-                    if(proyec.categoria === seleccionado){
-                        console.log("hola")
-                        console.log(proyec)
+                    if(proyec.categoria === contenido){
                         return proyec
                     }
                 })
                 filtrado.forEach(el => {
-                    let div = document.createElement("div")
-                    wrapperProyect.appendChild(div)
-                    div.innerHTML = `
-                    <div class="card_proyecto">
-                        <div class="card__border"></div>
-                        ${el.img}
-                        <div class="overflow"></div>
-                        <div class="card__description">
-                            <div class="card__categoria">
-                                ${el.categoria}
-                            </div>
-                            <div class="card__title">
-                                ${el.title}
-                            </div>
-                            <div class="card__cliente">
-                                ${el.cliente}
-                            </div>
-                            <div class="card__fecha">
-                                ${el.fecha}
-                            </div>
-                        </div>
-                    </div>
-                    `
-                    
+                    creacionCard(el)
                 })
                 }
             }else{

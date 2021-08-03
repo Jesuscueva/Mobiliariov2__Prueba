@@ -27,10 +27,10 @@ const eventoMouseMediaQuery = ()=> {
                 $subListaServicio[0].classList.toggle("anima")
                 $linkServicios.classList.toggle("selec")
             })
-            $linkProyectos.addEventListener("click", e => {
-                $subListaServicio[1].classList.toggle("anima")
-                $linkProyectos.classList.toggle("selec")
-            })
+            // $linkProyectos.addEventListener("click", e => {
+            //     $subListaServicio[1].classList.toggle("anima")
+            //     $linkProyectos.classList.toggle("selec")
+            // })
         }else{
             console.log("Desktop")
             // d.querySelector(".body").classList.remove("overflow")
