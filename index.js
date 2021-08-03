@@ -11,7 +11,7 @@ const d = document,
         w = window
 
 d.addEventListener("DOMContentLoaded", () => {
-    w.location.hash = "#/home"
+    // w.location.hash = "#/"
     eventoMouseMediaQuery()
     ScrollNav()
     MenuNavegacion("open_menu", ".container_lista")

@@ -1,6 +1,7 @@
 import Contacto from "../components/Contacto/Contacto.js"
 import Home from "../components/Home/Home.js"
 import Nosotros from "../components/Nosotros/Nosotros.js"
+import CardProyecto from "../components/Proyectos/CardProyecto.js"
 import Proyectos from "../components/Proyectos/Proyectos.js"
 import Diseño from "../components/Servicios/Diseño.js"
 import Fabricacion from "../components/Servicios/Fabricacion.js"
@@ -19,7 +20,7 @@ const root = d.getElementById("root")
 const Route = () => {
     let hash = window.location.hash
     root.innerHTML = " "
-    if( hash === "#/home"){
+    if( hash === "#/home" || hash ===  ""){
         console.log("Home")
         d.title = "Mobiliario Perú "
         root.scrollTo({
@@ -79,6 +80,7 @@ const Route = () => {
     }else if( hash === "#/proyectos"){
         d.title = "Proyectos Privados | Mobiliario - Perú"
         root.appendChild(Proyectos())
+        CardProyecto()
     }else if( hash === "#/proyectos/publicos"){
         root.innerHTML = "proyectos/publicos"
         d.title = "Proyectos Públicos | Mobiliario - Perú"
