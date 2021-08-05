@@ -43,6 +43,7 @@ strong{
 }
 .text_filtrado{
     text-align: center;
+    padding: 0px 10px;
     flex: 1;
     background-color: #fff;
     color: var(--color-secondary);
@@ -66,6 +67,14 @@ strong{
     gap: 24px;
     justify-content: center;
     flex-wrap: wrap;
+}
+.wrapper_individual-card{
+    transform: scale(0);
+    transition: .5s all;
+}
+.wrapper_individual-card.active{
+    transition: .6s all;
+    transform: scale(1);
 }
 .card_proyecto{
     position: relative;

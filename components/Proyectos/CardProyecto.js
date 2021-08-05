@@ -40,6 +40,7 @@ const CardProyecto = () => {
 
     const creacionCard = (e) => {
         let div = document.createElement("div")
+        div.classList.add("wrapper_individual-card")
                     wrapperProyect.appendChild(div)
                     div.innerHTML = `
                     <div class="card_proyecto">
@@ -66,12 +67,23 @@ const CardProyecto = () => {
 
     const wrapperProyect = document.querySelector(".wrapper__proyectos")
     const $opcion = document.querySelectorAll(".text_filtrado")
-
-            wrapperProyect.innerHTML = " "
-                ProyectosTotal.forEach(el => {
-                    creacionCard(el)
+    
+    
+    
+    wrapperProyect.innerHTML = " "
+    ProyectosTotal.forEach(el => {
+        creacionCard(el)
+    })
+    $opcion[0].className = "text_filtrado active"
+    // funcionSelec()
+    const $wrapperCard = document.querySelectorAll(".wrapper_individual-card")
+    console.log($wrapperCard)
+    $wrapperCard.forEach((cd) => {
+                console.log(cd)
+                setTimeout(() => {
+                    cd.classList.add("active")
+                }, 500)
             })
-            $opcion[0].className = "text_filtrado active"
 
     window.addEventListener("click", e => {
             if(e.target.matches(".text_filtrado")){
@@ -85,6 +97,13 @@ const CardProyecto = () => {
                             op.className = "text_filtrado"
                         }
                     })
+                    const $wrapperCard = document.querySelectorAll(".wrapper_individual-card")
+
+                    $wrapperCard.forEach((cd) => {
+                        setTimeout(() => {
+                            cd.classList.add("active")
+                        }, 400)
+                    })
                 }
                 
                 if(contenido.replace(/\s+/g, '') === "Todo"){
@@ -94,7 +113,6 @@ const CardProyecto = () => {
                     funcionSelec()
                 }else{
                     // console.log(e.target.textContent)
-                    funcionSelec()
                 e.target.className = "text_filtrado active"
                 console.log(e.target.className)
         
@@ -108,6 +126,7 @@ const CardProyecto = () => {
                 filtrado.forEach(el => {
                     creacionCard(el)
                 })
+                funcionSelec()
                 }
             }else{
                 return

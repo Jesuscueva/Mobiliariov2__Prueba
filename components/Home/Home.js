@@ -261,7 +261,7 @@ const Home = () => {
         + ver más
     </p>
     </div>
-    <div class="card_noticia">
+    <div class="card_noticia ultima_card">
     <i class="fas fa-calendar-alt"></i>
         
     <div class="description_noticias">
@@ -297,19 +297,19 @@ const Home = () => {
         </h2>
         <div class="contenedor__clientes">
             <figure class="figure__clientes">
-                <img src="" alt="cliente">
+                <img src="" alt="Imagen-Cliente">
             </figure>
             <figure class="figure__clientes">
-                <img src="" alt="cliente">
+                <img src="" alt="Imagen-Cliente">
             </figure>
             <figure class="figure__clientes">
-                <img src="" alt="cliente">
+                <img src="" alt="Imagen-Cliente">
             </figure>
             <figure class="figure__clientes">
-                <img src="" alt="cliente">
+                <img src="" alt="Imagen-Cliente">
             </figure>
             <figure class="figure__clientes">
-                <img src="" alt="cliente">
+                <img src="" alt="Imagen-Cliente">
             </figure>
         </div>
     </section>

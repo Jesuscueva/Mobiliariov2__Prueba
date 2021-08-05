@@ -139,8 +139,8 @@ a{
 .card{
     transition: .5s all;
     transform: rotateY(-90deg);
-    width: 300px;
-    height: 400px;
+    width: 270px;
+    max-height: 360px;
     background-color: #fff;
     border-radius: 16px;
     overflow: hidden;
@@ -161,8 +161,8 @@ a{
 }
 .card__icono{
     position: absolute;
-    width: 6.2rem;
-    height: 6.2rem;
+    width:  5.5rem;
+    height: 5.5rem;
     background-color: #fff;
     border-radius: 50%;
     top: 95px;
@@ -182,7 +182,7 @@ a{
     transform: scale(1.1) !important;
 }
 .card__body{
-    margin-top: 60px;
+    margin-top: 45px;
 }
 .card__body > h4{    
     font-size: 24px;
@@ -233,7 +233,7 @@ a{
     position: relative;
     width: 0;
     background-color: #666666;
-    border-radius: 10px;
+    border-radius: 4px;
     overflow: hidden;
     height: 535px;
     display: flex;
@@ -498,7 +498,7 @@ a{
     height: 130px;
     background-color: #666666;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -575,6 +575,16 @@ a{
     .gallery__rigth{
         border-left: 2px solid #fff;
     }
+    .section__five{
+        margin-bottom: 0;
+    }
+    .contenedor__clientes{
+        gap: 0;
+    }
+    .figure__clientes{
+        flex: 1;
+        height: 110px;
+    }
 }
 @media screen and (max-width: 540px) {
     *{
@@ -630,6 +640,21 @@ a{
     }
     .gallery{
         height: 330px;
+    }
+    .contenedor__cards{
+        padding: 24px 16px;
+    }
+    .card{
+        width: 90%;
+    }
+    .card__body{
+        margin-top: 40px;
+    }
+    .card__icono{
+        left: 38%;
+    }
+    .card__body > p{
+        padding: 11px;
     }
 }
 

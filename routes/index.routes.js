@@ -9,6 +9,7 @@ import Instalaciones from "../components/Servicios/Instalacione.js"
 import Carousel from "../js/Carousel.js"
 import ContenedorNosotros from "../js/ContenedorNsotros.js"
 import Formulario from "../js/Formulario.js"
+import FuncionEventos from "../js/FuncionEventos.js"
 import scrollEfecHome from "../js/ScrollEfecHome.js"
 import SliderServices from "../js/SliderServicios.js"
 
@@ -40,8 +41,7 @@ const Route = () => {
         setTimeout(()=>{
             inicio()
         }, 200)
-
-        
+        FuncionEventos()
         Carousel(imgCarousel)
         scrollEfecHome()
     }else if( hash === "#/nosotros"){
