@@ -56,7 +56,7 @@ const Nosotros = () => {
             </div>
             <div class="wrapper_img_descrip_">
                 <div class="container__img">
-                    <img src="./assets/vision2-02.png" alt="Misión">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/prueba2-d2f2c.appspot.com/o/vision2-02.png?alt=media&token=7d4356e1-6c56-44fe-8b72-6b7a553fdfa0" alt="Visión">
                 </div>
                 <div class="container__descrip">
                     <p class="descripcion_nosotros ">
@@ -68,7 +68,7 @@ const Nosotros = () => {
             </div>
             <div class="wrapper_img_descrip_">
                 <div class="container__img">
-                    <img src="./assets/valores-03.png" alt="Valores">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/prueba2-d2f2c.appspot.com/o/Valores-03-03.png?alt=media&token=0a0a86a4-a326-4f6d-9047-9951dedc221f" alt="Valores">
                 </div>
                 <div class="container__descrip">
                     <p class="descripcion_nosotros ">

@@ -10,13 +10,13 @@ const Home = () => {
             <div class="slide_section">
                 <div class="slider opacity">
                     <div class="img__carousel top">
-                        <img src="./assets/slider__uno.jpg" alt="">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/prueba2-d2f2c.appspot.com/o/slider__uno.jpg?alt=media&token=eb53e3f0-4a56-4d27-8634-fd3e91de41e4" alt="">
                     </div>
                     <div class="img__carousel bottom ">
-                        <img src="./assets/slider__dos.jpg" alt="">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/prueba2-d2f2c.appspot.com/o/slider__dos.jpg?alt=media&token=94454782-a6cb-407b-b23b-73e98fdbc82a" alt="">
                     </div>
                     <div class="img__carousel top">
-                        <img src="./assets/slider__Tres.jpg" alt="">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/prueba2-d2f2c.appspot.com/o/slider__Tres.jpg?alt=media&token=ad64de12-91c1-4561-ac04-035891b98cc1" alt="">
                     </div>
                 </div>
                 <div class="slider ">
