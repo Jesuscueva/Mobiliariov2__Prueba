@@ -68,7 +68,7 @@
     background-color: var(--color-fondo);
     height: 420px;
     display: flex;
-    border-radius: 10px;
+    border-radius: 7px;
     overflow: hidden;
     width: 75%;
 }

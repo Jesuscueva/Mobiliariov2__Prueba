@@ -168,7 +168,7 @@ const Home = () => {
                 <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
                 <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
             </div>
-            <a class="ver_mas">
+            <a href="#/Noticia" class="ver_mas">
                 + ver más
             </a>
     </div>
@@ -179,9 +179,9 @@ const Home = () => {
             <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
             <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
         </div>
-        <p class="ver_mas">
+        <a href="#/Noticia" class="ver_mas">
             + ver más
-        </p>
+        </a>
     </div>
     <div class="card_noticia">
     <i class="fas fa-calendar-alt"></i>
@@ -190,9 +190,9 @@ const Home = () => {
         <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
         <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
     </div>
-    <p class="ver_mas">
+    <a href="#/Noticia" class="ver_mas">
         + ver más
-    </p>
+    </a>
     </div>
     <div class="card_noticia">
 
@@ -202,9 +202,9 @@ const Home = () => {
     <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
     <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
     </div>
-    <p class="ver_mas">
+    <a href="#/Noticia" class="ver_mas">
     + ver más
-    </p>
+    </a>
     </div>
     <div class="card_noticia">
     <i class="fas fa-calendar-alt"></i>
@@ -213,9 +213,9 @@ const Home = () => {
         <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
         <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
     </div>
-    <p class="ver_mas">
+    <a href="#/Noticia" class="ver_mas">
         + ver más
-    </p>
+    </a>
     </div>
     <div class="card_noticia">
     <i class="fas fa-calendar-alt"></i>
@@ -224,9 +224,9 @@ const Home = () => {
         <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
         <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
     </div>
-    <p class="ver_mas">
+    <a href="#/Noticia" class="ver_mas">
         + ver más
-    </p>
+    </a>
     </div>
     <div class="card_noticia">
     <i class="fas fa-calendar-alt"></i>
@@ -235,9 +235,9 @@ const Home = () => {
         <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
         <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
     </div>
-    <p class="ver_mas">
+    <a href="#/Noticia" class="ver_mas">
         + ver más
-    </p>
+    </a>
     </div>
     <div class="card_noticia">
     <i class="fas fa-calendar-alt"></i>
@@ -246,9 +246,9 @@ const Home = () => {
         <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
         <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
     </div>
-    <p class="ver_mas">
+    <a href="#/Noticia" class="ver_mas">
         + ver más
-    </p>
+    </a>
     </div>
     <div class="card_noticia">
     <i class="fas fa-calendar-alt"></i>
@@ -257,9 +257,9 @@ const Home = () => {
         <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
         <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
     </div>
-    <p class="ver_mas">
+    <a href="#/Noticia" class="ver_mas">
         + ver más
-    </p>
+    </a>
     </div>
     <div class="card_noticia ultima_card">
     <i class="fas fa-calendar-alt"></i>
@@ -268,9 +268,9 @@ const Home = () => {
         <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
         <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
     </div>
-    <p class="ver_mas">
+    <a href="#/Noticia" class="ver_mas">
         + ver más
-    </p>
+    </a>
     </div>
         </div>
     </article>
@@ -291,7 +291,18 @@ const Home = () => {
 
     </section>
 
-    <section class="section__five">
+    
+    
+    
+    `
+    return contenedorHome
+}
+
+export default Home
+
+
+/**
+ * <section class="section__five">
         <h2 class="section__five_titulo titulo__">
             QUIENES CONFIARON  EN <br> <strong> NOSOTROS</strong>
         </h2>
@@ -313,10 +324,5 @@ const Home = () => {
             </figure>
         </div>
     </section>
-    
-    
-    `
-    return contenedorHome
-}
-
-export default Home
+ * 
+ */

@@ -5,7 +5,7 @@ const Diseño = () => {
     const contenedorDiseño = document.createElement("div")
     contenedorDiseño.innerHTML = `
     
-    <div class="section__Servicios section__primary">
+<div class="section__Servicios section__primary">
     <div class="wrapper_title_servicios">
         <h2 class="title_servicios">Diseño</h2>
         <div class="line"></div>
@@ -33,7 +33,7 @@ const Diseño = () => {
             </div>
         </div>
         <div class="wrapper__descrip">
-            <p>
+            <p class="parrafo__servicio">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
             </p>
             <ul>
