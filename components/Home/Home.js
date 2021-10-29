@@ -5,7 +5,7 @@ const Home = () => {
     const contenedorHome = document.createElement("div")
     contenedorHome.innerHTML = `
 
-        <section class="section__one section__primary">
+    <section class="section__one section__primary">
         <div class="container_slider">
             <div class="slide_section">
                 <div class="slider opacity">
@@ -161,117 +161,117 @@ const Home = () => {
             </div>
         </div>
         <div class="cards_noticias">
-    <div class="card_noticia">
-            <i class="fas fa-calendar-alt"></i>
+                <div class="card_noticia">
+                        <i class="fas fa-calendar-alt"></i>
 
-            <div class="description_noticias">
+                        <div class="description_noticias">
+                            <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                            <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
+                        </div>
+                        <a href="#/Noticia" class="ver_mas">
+                            + ver más
+                        </a>
+                </div>
+                <div class="card_noticia">
+                    <i class="fas fa-calendar-alt"></i>
+
+                    <div class="description_noticias">
+                        <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                        <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
+                    </div>
+                    <a href="#/Noticia" class="ver_mas">
+                        + ver más
+                    </a>
+                </div>
+                <div class="card_noticia">
+                <i class="fas fa-calendar-alt"></i>
+
+                <div class="description_noticias">
+                    <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                    <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
+                </div>
+                <a href="#/Noticia" class="ver_mas">
+                    + ver más
+                </a>
+                </div>
+                <div class="card_noticia">
+
+                <i class="fas fa-calendar-alt"></i>
+
+                <div class="description_noticias">
                 <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
                 <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
-            </div>
-            <a href="#/Noticia" class="ver_mas">
+                </div>
+                <a href="#/Noticia" class="ver_mas">
                 + ver más
-            </a>
-    </div>
-    <div class="card_noticia">
-        <i class="fas fa-calendar-alt"></i>
-
-        <div class="description_noticias">
-            <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-            <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
-        </div>
-        <a href="#/Noticia" class="ver_mas">
-            + ver más
-        </a>
-    </div>
-    <div class="card_noticia">
-    <i class="fas fa-calendar-alt"></i>
-
-    <div class="description_noticias">
-        <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-        <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
-    </div>
-    <a href="#/Noticia" class="ver_mas">
-        + ver más
-    </a>
-    </div>
-    <div class="card_noticia">
-
-    <i class="fas fa-calendar-alt"></i>
-
-    <div class="description_noticias">
-    <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-    <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
-    </div>
-    <a href="#/Noticia" class="ver_mas">
-    + ver más
-    </a>
-    </div>
-    <div class="card_noticia">
-    <i class="fas fa-calendar-alt"></i>
-        
-    <div class="description_noticias">
-        <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-        <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
-    </div>
-    <a href="#/Noticia" class="ver_mas">
-        + ver más
-    </a>
-    </div>
-    <div class="card_noticia">
-    <i class="fas fa-calendar-alt"></i>
-        
-    <div class="description_noticias">
-        <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-        <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
-    </div>
-    <a href="#/Noticia" class="ver_mas">
-        + ver más
-    </a>
-    </div>
-    <div class="card_noticia">
-    <i class="fas fa-calendar-alt"></i>
-        
-    <div class="description_noticias">
-        <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-        <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
-    </div>
-    <a href="#/Noticia" class="ver_mas">
-        + ver más
-    </a>
-    </div>
-    <div class="card_noticia">
-    <i class="fas fa-calendar-alt"></i>
-        
-    <div class="description_noticias">
-        <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-        <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
-    </div>
-    <a href="#/Noticia" class="ver_mas">
-        + ver más
-    </a>
-    </div>
-    <div class="card_noticia">
-    <i class="fas fa-calendar-alt"></i>
-        
-    <div class="description_noticias">
-        <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-        <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
-    </div>
-    <a href="#/Noticia" class="ver_mas">
-        + ver más
-    </a>
-    </div>
-    <div class="card_noticia ultima_card">
-    <i class="fas fa-calendar-alt"></i>
-        
-    <div class="description_noticias">
-        <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-        <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
-    </div>
-    <a href="#/Noticia" class="ver_mas">
-        + ver más
-    </a>
-    </div>
+                </a>
+                </div>
+                <div class="card_noticia">
+                <i class="fas fa-calendar-alt"></i>
+                    
+                <div class="description_noticias">
+                    <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                    <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
+                </div>
+                <a href="#/Noticia" class="ver_mas">
+                    + ver más
+                </a>
+                </div>
+                <div class="card_noticia">
+                <i class="fas fa-calendar-alt"></i>
+                    
+                <div class="description_noticias">
+                    <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                    <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
+                </div>
+                <a href="#/Noticia" class="ver_mas">
+                    + ver más
+                </a>
+                </div>
+                <div class="card_noticia">
+                <i class="fas fa-calendar-alt"></i>
+                    
+                <div class="description_noticias">
+                    <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                    <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
+                </div>
+                <a href="#/Noticia" class="ver_mas">
+                    + ver más
+                </a>
+                </div>
+                <div class="card_noticia">
+                <i class="fas fa-calendar-alt"></i>
+                    
+                <div class="description_noticias">
+                    <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                    <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
+                </div>
+                <a href="#/Noticia" class="ver_mas">
+                    + ver más
+                </a>
+                </div>
+                <div class="card_noticia">
+                <i class="fas fa-calendar-alt"></i>
+                    
+                <div class="description_noticias">
+                    <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                    <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
+                </div>
+                <a href="#/Noticia" class="ver_mas">
+                    + ver más
+                </a>
+                </div>
+                <div class="card_noticia ultima_card">
+                <i class="fas fa-calendar-alt"></i>
+                    
+                <div class="description_noticias">
+                    <h5 class="subtitle_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                    <P class="parrafo_noticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit adsfipoa aplerme emoas.</P>
+                </div>
+                <a href="#/Noticia" class="ver_mas">
+                    + ver más
+                </a>
+                </div>
         </div>
     </article>
 
